@@ -55,10 +55,25 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
             font-size: 1.5rem;
             font-weight: 700;
             color: white;
             text-decoration: none;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .hero-logo {
+            height: 80px;
+            width: auto;
+            margin-left: 15px;
+            vertical-align: middle;
         }
 
         .hero {
@@ -360,11 +375,21 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    טודו בוט
+                    <img src="logo.png" alt="Todo Bot Logo">
+                </a>
+            </nav>
+        </div>
+    </header>
 
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1><span class="emoji">🤖</span> טודו בוט - עוזר לניהול משימות</h1>
+                <h1><img src="logo.png" alt="Todo Bot Logo" class="hero-logo"> טודו בוט - עוזר לניהול משימות</h1>
                 <p>המהפכה בניהול משימות כאן! עוזר אישי חכם מבוסס בינה מלאכותית שמבין אותך בשפה טבעית, מגיב להודעות קוליות ושולח תזכורות חכמות - הכל דרך וואטסאפ הרגיל שלך. פשוט דבר אליו כמו לחבר הכי טוב שלך</p>
                 <a href="https://wa.me/972559664336" class="whatsapp-btn">
                     <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
